@@ -165,8 +165,12 @@
     <Compile Include="Client\Applications\RunnerOutput.cs" />
     <Compile Include="Client\Applications\ScriptRunner.cs" />
     <Compile Include="Client\Applications\UploadFile\PowerShellUploadFileForm.cs" />
-    <Compile Include="Client\Applications\UploadFile\PowerShellUploadFilePage2.cs" />
-    <Compile Include="Client\Applications\UploadFile\PowerShellUploadFilePage.cs" />
+    <Compile Include="Client\Applications\UploadFile\PowerShellUploadFilePage2.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client\Applications\UploadFile\PowerShellUploadFilePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Client\Commands\AbortQueryState.cs" />
     <Compile Include="Client\Commands\ListViewFilterQueryState.cs" />
     <Compile Include="Client\Commands\ListViewPagingQueryState.cs" />
