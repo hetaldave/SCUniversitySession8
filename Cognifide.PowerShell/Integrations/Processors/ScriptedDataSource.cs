@@ -9,7 +9,7 @@ namespace Cognifide.PowerShell.Integrations.Processors
         public void Process(GetLookupSourceItemsArgs args)
         {
             Assert.ArgumentNotNull(args, "args");
-            if (this.IsScripted(args.Source))
+            if (IsScripted(args.Source))
             {
                 var items = new ItemList();
                 var source = GetScriptedQueries(args.Source, args.Item, items);
